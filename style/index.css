@@ -1,0 +1,53 @@
+fieldset {
+    width: 50%;
+    height: 10%;
+    display: flex;
+}
+
+fieldset form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset form input {
+    margin: 5px;
+    height: 25px;
+}
+
+fieldset input[type="submit"] {
+    height: 35px;
+    width: 20%;
+}
+
+.error {
+    border-color: red;
+}
+
+#errorDialog {
+    margin-top: 140px;
+    margin-left: 200px;
+    width: 20%;
+    height: 5%;
+    background-color: red;
+    color: orange;
+    text-align: center;
+    opacity: 0.5;
+}
+
+#sucssesDialog {
+    margin-top: 140px;
+    margin-left: 200px;
+    width: 20%;
+    height: 5%;
+    background-color: rgb(168, 231, 40);
+    color: black;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.hiddenDialog {
+    display: none;
+}
