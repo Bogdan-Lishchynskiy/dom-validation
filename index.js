@@ -75,12 +75,13 @@ sucssesDialog.innerHTML = 'Thanks for info!';
 
 const regexUserName = /^user_([a-zA-Z0-9@\.]*)/i;
 const regexData = /\d{2}-\d{2}-\d{4}/;
+const regexAge = /^[1-9][0-9]*$/ ;
 
 age.onblur = function () {
-    if (isNaN(this.value)) {
-        this.className = "error";
+    if (!regexAge.test(this.value)) {     
+       this.className = "error";
         console.log(this);
-        ageWarn.innerHTML = 'Please type only number'
+        ageWarn.innerHTML = 'Please type only number bigger the 0'
     } else {
         this.className = ''
     }
