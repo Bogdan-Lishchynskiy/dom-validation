@@ -75,10 +75,12 @@ sucssesDialog.innerHTML = 'Thanks for info!';
 
 const regexUserName = /^user_([a-zA-Z0-9@\.]*)/i;
 const regexData = /\d{2}-\d{2}-\d{4}/;
-const regexAge = /^[1-9][0-9]*$/ ;
+const regexAge = /^[0-9][0-9]*$/ ;
+// var regexAge =/\D/;
+// var regexAge1 =/[a-z]/;
 
 age.onblur = function () {
-    if (!regexAge.test(this.value)) {     
+    if (!regexAge.test(age.value)) {     
        this.className = "error";
         console.log(this);
         ageWarn.innerHTML = 'Please type only number bigger the 0'
